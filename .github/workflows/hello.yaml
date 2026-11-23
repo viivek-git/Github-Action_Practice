@@ -13,9 +13,6 @@ on: # when the workflow should be run
   # push:   # This will run the job when there is push on the branch
 
   # pull_request: # # This will run the job when there is push on the branch
-
-  
-
 jobs: 
 
   say_hello:
