@@ -20,11 +20,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: testing the  code
-        run: ehco " code is testing"
+        run: echo " code is testing"
         
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: deploying the  code
-        run: ehco " code is deploying"
+        run: echo " code is deploying"
   
