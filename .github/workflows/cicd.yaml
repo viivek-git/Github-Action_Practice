@@ -11,18 +11,21 @@ jobs:
         run: echo " CLoning the repo"
         
   build:
+    needs: [code]
     runs-on: ubuntu-latest
     steps:
       - name: Building the  code
         run: echo " code is building"
         
   test:
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - name: testing the  code
         run: echo " code is testing"
         
   deploy:
+    needs: [build, test]
     runs-on: ubuntu-latest
     steps:
       - name: deploying the  code
