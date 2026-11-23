@@ -1,0 +1,30 @@
+name: CICD  
+
+on:
+  workflow_dispatch:
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cloning the repo
+        run: echo " CLoning the repo"
+        
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Building the  code
+        run: ehco " code is building"
+        
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing the  code
+        run: ehco " code is testing"
+        
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploying the  code
+        run: ehco " code is deploying"
+  
