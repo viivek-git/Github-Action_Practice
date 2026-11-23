@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Building the  code
-        run: ehco " code is building"
+        run: echo " code is building"
         
   test:
     runs-on: ubuntu-latest
