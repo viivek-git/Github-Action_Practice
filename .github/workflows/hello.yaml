@@ -5,3 +5,21 @@
 # steps - should be inside the job
 
 # actions - should be inside the steps
+name: Hello 
+
+on:   # when the workflow should be run
+
+  # push:   # This will run the job when there is push on the branch
+
+  # pull_request: # # This will run the job when there is push on the branch
+
+  workflow_dispatch: # This allows us to manually run the workflow !
+
+jobs: 
+
+  say_hello:
+    
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print hello world
+        run: echo "Hey vivek , welcome to github actions"
